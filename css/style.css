@@ -35,7 +35,7 @@ body {
 }  
 .menu{
 
-	margin-left:510px;
+	margin-left:500px;
 	width: 380px;
 } 
 
@@ -62,7 +62,7 @@ ul.menu > li > a {
 	color: #009ED8;
 	background-color: #004E90;
 	text-decoration: none;
-	font-family: 'helveticaneuecyr';
+	font-family:'helveticaneuecyr', Arial, Tahoma, sans-serif;
 	text-align: center;
 	height: 25px;
 
@@ -84,7 +84,7 @@ ul.menuSecond > li > a {
 	padding: 5px;
 	color: white;
 	text-decoration: none;
-	font-family: 'helveticaneuecyr';
+	font-family: 'helveticaneuecyr',Arial, Tahoma, sans-serif;
 	text-align: center;
 	height: 25px;
 
@@ -110,23 +110,29 @@ ul.menuSecond > li > a:hover {
 }
 
 .backgroundInner{
+	display: block;
 
 	background-color: rgba(0,0,0,0.4);
-	position: relative;
-	top:532px;
-	
-	transform:translateY(-50%);
-	margin:0 auto;
+	 /* position: relative;
+	 	top:532px;  */
 
-	width: 558px;
-	height: 612px; 
+	 position: absolute;
+	top:50%; 
+	left: 50%;
+	
+	 transform:
+	          translateY(-50%), 
+	          translateX(-50%);
+	
+	 width: 558px;
+	 height: 612px;  
 	
 }
 
 .headline{
 	border-bottom: 2px solid #BEC6BC;
 	color: white;
-	font-family: 'helveticaneuecyr';
+	font-family: 'helveticaneuecyr', Arial, Tahoma, sans-serif;
 	text-align: center;
 	padding: 17px;
 	margin-bottom: 45px; 
@@ -138,7 +144,7 @@ ul.menuSecond > li > a:hover {
 	text-align:center; 
 	font-size: 16px;
 	font-weight: bold;
-	font-family: 'helveticaneuecyr';
+	font-family: 'helveticaneuecyr',Arial, Tahoma, sans-serif;
 	color:white; 
 	border-radius: 4px; 
 	padding:10px 50px; 
@@ -148,7 +154,7 @@ ul.menuSecond > li > a:hover {
 
 .line{
 
-	font-family: 'helveticaneuecyr';
+	font-family: 'helveticaneuecyr', Arial, Tahoma, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	color: #9A9A9A;
@@ -160,7 +166,8 @@ ul.menuSecond > li > a:hover {
 	content: '';
 	border-bottom: 1px solid #9A9A9A;
 	display: inline-block;
-	width: 122px;
+	width: 121px;
+    vertical-align: middle;
 
 }
 
@@ -169,7 +176,8 @@ ul.menuSecond > li > a:hover {
 	border-bottom: 1px solid #9A9A9A;
 
 	display: inline-block;
-	width: 122px;
+	width: 121px;
+	vertical-align: middle;
 
 }
 p{
@@ -181,7 +189,7 @@ input {
 
 	font-size: 14px;
 	font-weight: bold;
-	font-family:'helveticaneuecyr', sans-serif;
+	font-family:'helveticaneuecyr', Arial, Tahoma, sans-serif;
 	background: #080707;
 	padding:7px 115px 7px 10px;
 	color: white;
@@ -194,19 +202,20 @@ input:hover {
 
 label {
 	font-size: 14px;
-	font-family:'helveticaneuecyr', sans-serif;
+	font-family:'helveticaneuecyr', Arial, Tahoma, sans-serif;
 	color:white; 
 }
 
-button{
-	text-decoration:none; 
+
+input[type="submit"] {
+
+    text-decoration:none; 
 	text-align:center; 
 	font-size: 14px;
 	font-weight: bold;
-	font-family: 'helveticaneuecyr';
+	font-family: 'helveticaneuecyr', Arial, Tahoma, sans-serif;
 	color:white; 
 	background-color:#00A8D8; 
-
 	border-radius: 4px; 
 	padding:7px 16px; 
 	margin-left: 202px; 
@@ -216,7 +225,7 @@ button{
 .text{
 	text-align:center; 
 	font-size: 11px;
-	font-family: 'helveticaneuecyr';
+	font-family: 'helveticaneuecyr',Arial, Tahoma, sans-serif;
 	color:white; 
 	margin-top: 15px;
 }
